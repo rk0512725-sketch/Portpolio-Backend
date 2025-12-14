@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Health check
-app.get('/api/contact', (req, res) => {
+app.get('https://portpolio-backend-ag9n.onrender.com/api/contact', (req, res) => {
   res.json({ status: 'ok' });
 });
 
