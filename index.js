@@ -15,7 +15,7 @@ app.get('/api/health', (req, res) => {
 
 // Contact API (REAL EMAIL SENDER)
 app.post('/api/contact', async (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, message } = req.body || {};
 
   // Basic validation
   if (!name || !email || !message) {
